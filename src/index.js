@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import App from './components/App.jsx'
+import 'bootstrap';
+
+import App from './components/routes/App';
 
 ReactDOM.render(
     <App />,
