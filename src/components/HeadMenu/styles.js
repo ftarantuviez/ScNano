@@ -39,7 +39,8 @@ export const ContainerAbsolute = styled.div`
     position: absolute;
     width: 100%;
     height: 100%;
-    
+    padding: 0;
+    z-index: 100;
     display: block;
     background: #f4f3f5; 
     &.menuOn{
@@ -53,5 +54,6 @@ export const ContainerAbsolute = styled.div`
 `
 export const RowContainer = styled.div`
     height: 100%;
+    margin: 0;
 `
 

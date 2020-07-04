@@ -8,9 +8,9 @@ class DownMenu extends Component{
     render(){
         return(
     
-            <DownMenuContainer className="container">
+            <DownMenuContainer className="fluid-container">
                 <DownMenuRow className="row">
-                    <DownMenuCol className="col">
+                    <DownMenuCol className="col-12">
                         <Icon icon={home3}/>
                         <Icon icon={home3}/>
                         <Icon icon={home3}/>

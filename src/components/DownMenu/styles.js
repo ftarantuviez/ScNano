@@ -5,6 +5,8 @@ export const DownMenuContainer = styled.div`
     bottom: 20px;
     display: flex;
     justify-content: center;
+    width: 100%;
+    z-index: 20;
 `
 
 export const DownMenuRow = styled.div`
@@ -14,6 +16,7 @@ export const DownMenuRow = styled.div`
     padding: 10px;
     display: flex;
     justify-content: center;
+    background: #d4d4d4b8;
 `
 export const DownMenuCol = styled.div`
     display: flex;

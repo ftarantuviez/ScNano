@@ -10,6 +10,7 @@ import {
 import { GlobalStyles } from '../../GlobalStyles'
 
 import Layaout from './Layaout'
+import LandingPage from '../LandingPage/LandingPage'
 
 
 class App extends Component{
@@ -17,9 +18,10 @@ class App extends Component{
     {
         return(
             <>
-               <GlobalStyles />
-               <Layaout />
-                
+
+                <GlobalStyles />
+                <Layaout />
+                <LandingPage />
                
             </>
         )
