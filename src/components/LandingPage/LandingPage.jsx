@@ -3,6 +3,7 @@ import React, {Component} from 'react'
 import {SecondaryTitle, PrimaryTitle, DateData} from './styles';
 import Searcher from '../Searcher/Searcher';
 import {MainCard} from '../MainCard/MainCard';
+import {Card} from '../Card/Card'
 
 class LandingPage extends Component{
     render(){
@@ -25,6 +26,10 @@ class LandingPage extends Component{
                         <p><DateData>Date: 19/09/08</DateData></p>
                     </div>
                 <MainCard />
+                    <div className="container m-3">
+                        <h3><i>Categories</i></h3>
+                    </div>
+                <Card />
             </>
         )
     }
