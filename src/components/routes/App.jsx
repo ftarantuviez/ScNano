@@ -7,10 +7,10 @@ import {
   Link
 } from "react-router-dom";
 
-import {GlobalStyles} from '../GlobalStyles'
+import { GlobalStyles } from '../../GlobalStyles'
 
-import Layaout from './routes/Layaout'
-import {Main} from '../pages/main'
+import Layaout from './Layaout'
+
 
 class App extends Component{
     render()
@@ -19,7 +19,8 @@ class App extends Component{
             <>
                <GlobalStyles />
                <Layaout />
-               <Main />
+                
+               
             </>
         )
     }

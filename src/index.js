@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 
-import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-import App from './components/App';
+import App from './components/routes/App';
 
 ReactDOM.render(
     <App />,
