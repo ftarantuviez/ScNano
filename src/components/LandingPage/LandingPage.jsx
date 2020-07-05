@@ -1,9 +1,9 @@
 import React, {Component} from 'react'
 
-import {SecondaryTitle, PrimaryTitle, DateData} from './styles';
+import {SecondaryTitle, PrimaryTitle, DateData, AllButton} from './styles';
 import Searcher from '../Searcher/Searcher';
 import {MainCard} from '../MainCard/MainCard';
-import {Card} from '../Card/Card'
+import {ListOfCards} from '../ListOfCards/ListOfCards'
 
 class LandingPage extends Component{
     render(){
@@ -27,9 +27,15 @@ class LandingPage extends Component{
                     </div>
                 <MainCard />
                     <div className="container m-3">
-                        <h3><i>Categories</i></h3>
+                        <h3 className="mb-5"><i>Categories</i></h3>
                     </div>
-                <Card />
+                <ListOfCards />
+                    <div className="container m-3 pt-5 d-flex align-items-center justify-content-between">
+                        <h3><i>Categories</i></h3>
+                        <AllButton><strong>See all +</strong></AllButton>
+                        
+                    </div>
+                <ListOfCards />
             </>
         )
     }

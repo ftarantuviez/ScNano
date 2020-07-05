@@ -18,3 +18,8 @@ export const PrimaryTitle = styled.h1`
 export const DateData = styled.small`
     color: #5e6477;
 `
+
+export const AllButton = styled.span`
+    position: absolute;
+    right: 40px;
+`
