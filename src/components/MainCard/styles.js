@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const MainCardContainer = styled.div`
+export const MainCardContainer = styled.a`
     padding: 30px;
     display: flex;
     justify-content: space-between;

@@ -1,0 +1,137 @@
+{
+    "posts": [
+        {
+            "id": 0,
+            "date": "DayDate",
+            "title": "TitlePost",
+            "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+            "author": "Francisco Tarantuviez",
+            "imageCard": "https://imagedomain.com",
+            "categorie": "science"
+            
+        },
+        {
+            "id": 1,
+            "date": "DayDate",
+            "title": "TitlePost",
+            "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+            "author": "Francisco Tarantuviez",
+            "imageCard": "https://imagedomain.com",
+            "categorie": "science"
+            
+        },
+        {
+            "id": 2,
+            "date": "DayDate",
+            "title": "TitlePost",
+            "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+            "author": "Francisco Tarantuviez",
+            "imageCard": "https://imagedomain.com",
+            "categorie": "science"
+            
+        },
+        {
+            "id": 3,
+            "date": "DayDate",
+            "title": "TitlePost",
+            "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+            "author": "Francisco Tarantuviez",
+            "imageCard": "https://imagedomain.com",
+            "categorie": "science"
+            
+        },
+        {
+            "id": 4,
+            "date": "DayDate",
+            "title": "TitlePost",
+            "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+            "author": "Francisco Tarantuviez",
+            "imageCard": "https://imagedomain.com",
+            "categorie": "science"
+            
+        },
+        {
+            "id": 5,
+            "date": "DayDate",
+            "title": "TitlePost",
+            "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+            "author": "Francisco Tarantuviez",
+            "imageCard": "https://imagedomain.com",
+            "categorie": "science"
+            
+        },
+        {
+            "id": 6,
+            "date": "DayDate",
+            "title": "TitlePost",
+            "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+            "author": "Francisco Tarantuviez",
+            "imageCard": "https://imagedomain.com",
+            "categorie": "science"
+            
+        },
+        {
+            "id": 7,
+            "date": "DayDate",
+            "title": "TitlePost",
+            "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+            "author": "Francisco Tarantuviez",
+            "imageCard": "https://imagedomain.com",
+            "categorie": "science"
+            
+        },
+        {
+            "id": 8,
+            "date": "DayDate",
+            "title": "TitlePost",
+            "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+            "author": "Francisco Tarantuviez",
+            "imageCard": "https://imagedomain.com",
+            "categorie": "science"
+            
+        },
+        {
+            "id": 9,
+            "date": "DayDate",
+            "title": "TitlePost",
+            "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+            "author": "Francisco Tarantuviez",
+            "imageCard": "https://imagedomain.com",
+            "categorie": "science"
+            
+        },
+        {
+            "id": 10,
+            "date": "DayDate",
+            "title": "TitlePost",
+            "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+            "author": "Francisco Tarantuviez",
+            "imageCard": "https://imagedomain.com",
+            "categorie": "science"
+            
+        }
+    ],
+    "categories": [
+        {
+            "id": 0,
+            "nameCategorie": "Science",
+            "shortDescription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+            "imageSrc": "https://imagedomain.com",
+            "classColor": "scienceColor"
+        },
+        {
+            "id": 1,
+            "nameCategorie": "Business",
+            "shortDescription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+            "imageSrc": "https://imagedomain.com",
+            "classColor": "businessColor"
+        },
+        {
+            "id": 0,
+            "nameCategorie": "Technology",
+            "shortDescription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+            "imageSrc": "https://imagedomain.com",
+            "classColor": "technologyColor"
+        }
+    ]
+}

@@ -22,7 +22,11 @@ class App extends Component{
 
                 <GlobalStyles />
                 <Layaout />
-                <LandingPage />
+                <BrowserRouter>
+                    <Switch>
+                        <Route exact path="/" component={LandingPage} />
+                    </Switch>
+                </BrowserRouter>
 
                 <Footer />
                

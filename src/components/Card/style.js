@@ -1,6 +1,7 @@
 import styled from 'styled-components'
+import {Link} from 'react-router-dom'
 
-export const CardContainer = styled.div`
+export const CardContainer = styled.a`
     border-radius: 18px;
     height: 250px;
     padding: 20px;

@@ -32,7 +32,9 @@ export const GlobalStyles = createGlobalStyle`
     }
     a:hover{
         text-decoration: none;
+        color: #fdfdfd;
     }
+    
 
     body{
         background: #fefefe;
