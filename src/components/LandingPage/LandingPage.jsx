@@ -7,10 +7,36 @@ import {ListOfCards} from '../ListOfCards/ListOfCards';
 
 import {posts, categories} from '../../api.json'
 
+
 class LandingPage extends Component{
+    constructor(props){
+        super(props)
+        this.state = {
+            postsState: [],
+            postsCategories: []            
+        };
+    }
+
+    componentDidMount(){
+    
+        this.timeoutId = setTimeout(() =>{
+            this.setState({
+                postsState: posts,
+                postsCategories: categories
+            })
+        }, 3000)
+    
+    }
+
+    componentWillUnmount(){
+        clearInterval(this.timeoutId)
+    }
+
     render(){
-        let lastPost = posts.filter(post => post.postOfTheDay === true)
+        let lastPost = this.state.postsState.filter(post => post.postOfTheDay === true)
+        console.log(lastPost)
         return(
+
             <>
                 <div className="fluid-container">
                     <div className="row">
@@ -26,18 +52,18 @@ class LandingPage extends Component{
                 <Searcher />
                     <div className="container m-3">
                         <h3><i>Last post </i></h3>
-                        <p><DateData>Date: {lastPost[0].date}</DateData></p>
+                        <p><DateData>Date: {lastPost[0] ? lastPost[0].date : 'date'}</DateData></p>
                     </div>
                 <MainCard {...lastPost[0]}/>
                     <div className="container m-3">
                         <h3 className="mb-5"><i>Categories</i></h3>
                     </div>
-                <ListOfCards data={categories}/>
+                <ListOfCards data={this.state.postsCategories}/>
                     <div className="container m-3 pt-5 d-flex align-items-center justify-content-between">
                         <h3><i>Categories</i></h3>
                         <AllButton><strong>See all +</strong></AllButton> 
                     </div>
-                <ListOfCards data={posts}/>
+                <ListOfCards data={this.state.postsState}/>
             </>
         )
     }
