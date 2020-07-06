@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, useState} from 'react';
 
 import {
   BrowserRouter,
@@ -11,23 +11,35 @@ import { GlobalStyles } from '../../GlobalStyles'
 
 import Layaout from './Layaout'
 import LandingPage from '../LandingPage/LandingPage'
+import DetailPage from '../DetailPage/DetailPage'
 import {Footer} from '../Footer/Footer'
+
+import {posts, categories} from '../../api.json'
 
 
 class App extends Component{
     
-    render()
-    {
+    render(){
+
+    const urlParams = new window.URLSearchParams(window.location.search)
+    const detailId = urlParams.get('detail')
+    
         return(
             <>
 
                 <GlobalStyles />
                 <Layaout />
-                <BrowserRouter>
-                    <Switch>
-                        <Route exact path="/" component={LandingPage} />
-                    </Switch>
-                </BrowserRouter>
+                {
+                    detailId 
+                    ? <DetailPage 
+                        data={posts}
+                        detailId={detailId}
+                        />
+                    : <LandingPage 
+                        postsData={posts}
+                        categoriesData={categories}
+                    />
+                }
 
                 <Footer />
                

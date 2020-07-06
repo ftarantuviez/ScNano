@@ -1,11 +1,11 @@
 import React, {Component} from 'react'
+import {Link} from 'react-router-dom'
 
 import {SecondaryTitle, PrimaryTitle, DateData, AllButton} from './styles';
 import Searcher from '../Searcher/Searcher';
 import {MainCard} from '../MainCard/MainCard';
 import {ListOfCards} from '../ListOfCards/ListOfCards';
 
-import {posts, categories} from '../../api.json'
 
 
 class LandingPage extends Component{
@@ -13,7 +13,7 @@ class LandingPage extends Component{
         super(props)
         this.state = {
             postsState: [],
-            postsCategories: []            
+            postsCategories: []
         };
     }
 
@@ -21,10 +21,10 @@ class LandingPage extends Component{
     
         this.timeoutId = setTimeout(() =>{
             this.setState({
-                postsState: posts,
-                postsCategories: categories
+                postsState: this.props.postsData,
+                postsCategories: this.props.categoriesData
             })
-        }, 3000)
+        }, 2000)
     
     }
 
@@ -34,7 +34,7 @@ class LandingPage extends Component{
 
     render(){
         let lastPost = this.state.postsState.filter(post => post.postOfTheDay === true)
-        console.log(lastPost)
+        
         return(
 
             <>
@@ -60,10 +60,11 @@ class LandingPage extends Component{
                     </div>
                 <ListOfCards data={this.state.postsCategories}/>
                     <div className="container m-3 pt-5 d-flex align-items-center justify-content-between">
-                        <h3><i>Categories</i></h3>
+                        <h3><i>Posts</i></h3>
                         <AllButton><strong>See all +</strong></AllButton> 
                     </div>
                 <ListOfCards data={this.state.postsState}/>
+                
             </>
         )
     }
