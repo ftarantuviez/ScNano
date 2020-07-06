@@ -11,6 +11,7 @@ import { GlobalStyles } from '../../GlobalStyles'
 
 import Layaout from './Layaout'
 import LandingPage from '../LandingPage/LandingPage'
+import {Footer} from '../Footer/Footer'
 
 
 class App extends Component{
@@ -22,6 +23,8 @@ class App extends Component{
                 <GlobalStyles />
                 <Layaout />
                 <LandingPage />
+
+                <Footer />
                
             </>
         )

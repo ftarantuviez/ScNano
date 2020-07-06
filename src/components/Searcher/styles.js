@@ -12,7 +12,8 @@ export const Input = styled.input`
     width: 100%;
     border-top-left-radius: inherit;
     border-bottom-left-radius: inherit;
-
+    position: relative;
+    z-index: 30;
     &::placeholder{
         color: #e6e5e6;
     
@@ -29,6 +30,7 @@ export const SearcherContainer = styled.div`
 
 export const IconSearch = styled.div`
     display: flex;
+    
     width: 100%;
     border-radius: 40px;
     border-top-right-radius: inherit;

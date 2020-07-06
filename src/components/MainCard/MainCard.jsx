@@ -4,7 +4,7 @@ import {ShortDescription, MainCardContainer, ParagraphShortDescription} from './
 
 export const MainCard = (props) =>(
     <div className="container">
-        <div className="row m-4 justify-content-lg-center">
+        <div className="row m-2 justify-content-lg-center">
             <MainCardContainer className="col-12 col-lg-9">
                 <ShortDescription>
                     <h5 className="mb-1">Title MDR</h5>

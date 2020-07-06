@@ -1,12 +1,15 @@
 import React from 'react'
 
 import {CardContainer, SmallDescription, ImageContainer, ImageCard ,DescriptionContainer} from './style'
+import {business} from '../../images/business.png'
 
-export const Card = () =>{
+export const Card = ({classColor}) =>{
+    let clases = "col-6 col-sm-4 col-md-3 "
+    let nameClass = clases + classColor;
     return(
-        <CardContainer className="col-6 col-sm-4 col-md-3 scienceColor">
+          <CardContainer className={nameClass} >
             <ImageContainer>
-                <ImageCard src="" alt=""/>
+               <img src="" alt="Ima"/>
             </ImageContainer>
 
             <DescriptionContainer>

@@ -33,7 +33,7 @@ class Layaout extends Component{
 
                     
                 
-                <DownMenu />
+                <DownMenu menuToggle={true}/>
             </>
         )
     }

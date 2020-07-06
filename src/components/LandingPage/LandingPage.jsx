@@ -32,8 +32,7 @@ class LandingPage extends Component{
                 <ListOfCards />
                     <div className="container m-3 pt-5 d-flex align-items-center justify-content-between">
                         <h3><i>Categories</i></h3>
-                        <AllButton><strong>See all +</strong></AllButton>
-                        
+                        <AllButton><strong>See all +</strong></AllButton> 
                     </div>
                 <ListOfCards />
             </>
