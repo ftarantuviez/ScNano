@@ -6,7 +6,7 @@ import {menu} from 'react-icons-kit/icomoon/menu'
 import {ic_favorite} from 'react-icons-kit/md/ic_favorite'
 import {cancelCircle} from 'react-icons-kit/icomoon/cancelCircle'
 
-import {CercleMenu} from './styles'
+import {CercleMenu, IconAusent, IconPresent, CancelIcon} from './styles'
 
 class DownMenu extends Component{
     
@@ -46,11 +46,16 @@ class DownMenu extends Component{
 
                     {menuIcon}
                    {detailId 
-                        ? <a href="/"> {homeIcon} </a>
-                        : <a href="#app">{homeIcon}</a>
+                        ?   <>
+                                <IconAusent href="/"> {homeIcon} </IconAusent>
+                                <IconPresent href="/favorites"> {favoriteIcon} </IconPresent>
+                            </>
+                        :   <> 
+                                <IconPresent href="#app">{homeIcon}</IconPresent>
+                                <IconAusent href="/favorites"> {favoriteIcon} </IconAusent>
+                            </>
                     }
-                   <a href="/favorites"> {favoriteIcon} </a>
-                   {cancelIcon}
+                   <CancelIcon>{cancelIcon} </CancelIcon>
                    
 
             </ CercleMenu>

@@ -15,6 +15,7 @@ import FavoritesPage from '../FavoritesPage/FavoritesPage'
 import {Footer} from '../Footer/Footer'
 
 import {posts, categories} from '../../api.json'
+import NewPost from '../NewPost/NewPost';
 
 
 class App extends Component{
@@ -38,14 +39,16 @@ class App extends Component{
                                 detailId={detailId}
                                 />
                             : <Route path="/" exact>
-                                    <LandingPage 
+                                    {/* <LandingPage 
                                         postsData={posts}
                                         categoriesData={categories}
-                                    />  
+                                    /> */}  
+                                    <NewPost />
                                 </Route> 
                         }
                         
                         {/* <Route path="/favorites" exact component={FavoritesPage}/> */}
+                        {/* <Route path="/new-post/?detail=id" component={NewPost} /> */}
                     </Switch>
                 </Router>
                 <Footer />

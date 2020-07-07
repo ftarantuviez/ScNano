@@ -31,3 +31,23 @@ export const CercleMenu = styled.div`
     }
 
 `
+
+export const IconPresent = styled.a`
+    color: #030303;
+`
+export const IconAusent = styled.a`
+    color: #B9ACAD;
+
+    &:hover{
+        color: #030303;
+    }
+`
+
+export const CancelIcon = styled.span`
+    color: #4c6a89;
+    cursor: pointer;
+
+    &:hover{
+        color: rgb(190, 30, 44);
+    }
+`
