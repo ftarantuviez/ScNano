@@ -6,15 +6,12 @@ module.exports = {
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js'
+        filename: 'bundle.js',
+        publicPath: '/'
     },
     devtool: 'source-map',
     stats: {
         errorDetails: true
-    },
-    devServer: {
-        port: 4000,
-        historyApiFallback: true
     },
     resolve: {
         extensions: ['.js', '.jsx']
@@ -36,11 +33,15 @@ module.exports = {
             }
         ]
     },
-
+    
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html',
         })
-    ]
-
+    ],
+    
+    devServer: {
+        port: 4000,
+        historyApiFallback: true
+    },
 }

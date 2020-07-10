@@ -37,15 +37,15 @@ class DownMenu extends Component{
             cancelIcon = null;
         }  
 
-        const urlParams = new window.URLSearchParams(window.location.search)
-        const detailId = urlParams.get('detail')
+        const urlParams = window.location.pathname;
+
         return(
            <CercleMenu 
             onClick={() => this.handleClick()} 
             className={nameClass}>
 
                     {menuIcon}
-                   {detailId 
+                   {urlParams !== '/'
                         ?   <>
                                 <IconAusent href="/"> {homeIcon} </IconAusent>
                                 <IconPresent href="/favorites"> {favoriteIcon} </IconPresent>

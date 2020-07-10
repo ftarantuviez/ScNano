@@ -34,6 +34,8 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^20.0.0",
+    "@ckeditor/ckeditor5-react": "^2.1.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-delay-render": "^0.1.2",
