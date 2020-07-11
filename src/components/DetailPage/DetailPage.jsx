@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 
-import {StrongCategorie} from './styles'
+import {StrongCategorie, BodyContainer} from './styles'
 
 class DetailPage extends Component{
     
@@ -12,6 +12,9 @@ class DetailPage extends Component{
                 <h1>{itemSelect[0].title}</h1>
                 <StrongCategorie>{itemSelect[0].categorie.charAt(0).toUpperCase() + itemSelect[0].categorie.slice(1)}</StrongCategorie> <br />
                 <small>Date: {itemSelect[0].date}</small>
+                <BodyContainer className="container mt-5">
+                    {itemSelect[0].body}
+                </BodyContainer>
             </>
         )
     }

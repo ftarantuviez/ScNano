@@ -24,3 +24,16 @@ export const ParagraphShortDescription = styled.p`
     margin: 0;
     line-height: 1.3;
 `
+export const ImageContainer = styled.div`
+    
+    width: 90px;
+    height: 130px;
+    position: absolute;
+    right: -23px;
+    top: -20px;
+}
+`
+export const ImageCard = styled.img`
+    width: 100%;
+    height: 100%;
+`

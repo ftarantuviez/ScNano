@@ -37,7 +37,7 @@ export const DescriptionContainer = styled.div`
 `
 
 export const ImageContainer = styled.div`
-    border: 1px solid black;
+    
     width: 90px;
     height: 130px;
     position: absolute;
@@ -46,5 +46,6 @@ export const ImageContainer = styled.div`
 }
 `
 export const ImageCard = styled.img`
-    box-shadow: 2px 2px 2px white;
+    width: 100%;
+    height: 100%;
 `

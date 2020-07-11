@@ -44,6 +44,7 @@
     "react-imported-component": "^6.3.5",
     "react-router-dom": "^5.2.0",
     "semantic-ui-react": "^0.88.2",
-    "styled-components": "^5.1.1"
+    "styled-components": "^5.1.1",
+    "uniqid": "^5.2.0"
   }
 }

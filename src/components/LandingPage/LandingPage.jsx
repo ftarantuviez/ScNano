@@ -42,8 +42,8 @@ class LandingPage extends Component{
                     <div className="row">
                         <div className="col-12 ml-3">
 
-                            <SecondaryTitle>Doctor en psicologia</SecondaryTitle>
-                            <PrimaryTitle>Roberto Gonzales</PrimaryTitle>
+                            <SecondaryTitle>Blog bloggers</SecondaryTitle>
+                            <PrimaryTitle>Insert Good Title</PrimaryTitle>
 
                         </div>
                     </div>
