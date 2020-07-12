@@ -19,7 +19,10 @@ class Layaout extends Component{
     render(){
         return(
             <>
-                <HeadMenu menuToggle={this.state.menuOn} />
+                <HeadMenu 
+                    menuToggle={this.state.menuOn} 
+                    liHandleClick={this.handleClick}
+                />
                 
                 <HeadMenuIconsContainer className="fluid-container d-flex">
                     <OptionsContainer onClick={() => this.handleClick()} className="options d-block d-md-none">

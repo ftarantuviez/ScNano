@@ -63,7 +63,9 @@ class LandingPage extends Component{
                         <h3><i>Posts</i></h3>
                         <AllButton><strong>See all +</strong></AllButton> 
                     </div>
-                <ListOfCards data={this.state.postsState}/>
+                <ListOfCards 
+                    data={this.state.postsState}
+                />
                 
             </>
         )

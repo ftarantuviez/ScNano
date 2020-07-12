@@ -1,5 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 
+
 export const MenuAnimationOn = keyframes`
     from{
         left: -1000px;
@@ -25,11 +26,6 @@ export const UnorderList = styled.ul`
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-
-`
-
-export const AnchorList = styled.a`
-
     font-size: 24px;
 
 `

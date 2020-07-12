@@ -1,7 +1,7 @@
-import React, {Component, useState} from 'react';
+import React, {Component, useState, Ref} from 'react';
 
 import {
-  BrowserRouter,
+  BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
@@ -20,7 +20,8 @@ import {NewPostPage} from '../NewPostPage/NewPostPage'
 const uniqid = require('uniqid')
 
 export const App = () =>{   
-    
+    const refFavorite = React.createRef()
+
     const [bodyState, setBodyState] = useState({})
     const [keyNumberState, setKeyNumberState] = useState(0)
     const [categorieState, setCategorieState] = useState({
@@ -29,6 +30,16 @@ export const App = () =>{
         science: false
     })
     const [newPostState, setNewPostState] = useState({})
+    const [favorites, setFavorites] = useState([])
+    const [likeState, setLikeState] = useState(false)
+    const [likesNumber, setLikesNumber] = useState(0)
+
+    const handleFavorite = () =>{
+        setLikeState(!likeState)
+        if(likeState) setLikesNumber(likesNumber - 1)
+        else setLikesNumber(likesNumber + 1)
+    }
+   
 
     const handleSubmit = (e) =>{
         setKeyNumberState(keyNumberState + 1)
@@ -39,7 +50,9 @@ export const App = () =>{
                 shortDescription: "Esta es una breve descripcion de la idea fundamental del conocimiento natural",
                 date: `${new Date().getMonth()}/${new Date().getDate()}/${new Date().getFullYear()}`,
                 body: bodyState, 
-                categorie: categorieState,                
+                categorie: categorieState,
+                likes: 0,
+                favorite: false                
             })
         }
 
@@ -57,23 +70,28 @@ export const App = () =>{
 
     return(
         <>
+        {console.log(refFavorite.current)}
 
             <GlobalStyles />
-            <Layaout />
             <Router >
+            <Layaout />
                 <Switch>
                     {
                         detailId 
-                        ? <DetailPage 
+                        ? <NewPostPage 
                             data={posts}
                             detailId={detailId}
+                            handleFavorite={handleFavorite}
+                            likeState={likeState}
+                            likesNumber={likesNumber}
                             />
                         : <Route path="/" exact>
                                 <LandingPage 
                                     postsData={posts}
                                     categoriesData={categories}
+                                    refFavorite={refFavorite}
                                 />  
-                            </Route> 
+                           </Route> 
                     }
                     
                     <Route exact path="/new-post/prueba"> 

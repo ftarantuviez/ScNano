@@ -6,15 +6,16 @@ import {ContainerOverflow} from './styled';
 
 
 
-export const ListOfCards = ({data}) =>(
+export const ListOfCards = ({data, refFavorite}) =>(
     <>
         <div className="fluid-container">
             <ContainerOverflow className="row">
-                {data.map(number => 
-                    <Card key={number.keyNumber} 
+                {data.length !== 0 
+                ? data.map(number => 
+                    <Card key={number.keyNumber}
                           {...number}
-                    />
-                )
+                    />)
+                : 'There is not posts here'     
                     
                 }
 

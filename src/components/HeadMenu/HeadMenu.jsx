@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-
-import {UnorderList, AnchorList, ContainerAbsolute, RowContainer} from './styles'
+import {Link} from 'react-router-dom'
+import {UnorderList, ContainerAbsolute, RowContainer} from './styles'
 
 class HeadMenu extends Component {
     
@@ -9,23 +9,24 @@ render(){
     this.props.menuToggle 
     ? className += " menuOn"
     : className += " menuOff"
+
     return(
 
     <ContainerAbsolute className={className}>
         <RowContainer className="row">
             
             <UnorderList className="col-12">
-                <li>
-                    <AnchorList href="/"> Home </AnchorList>
+                <li onClick={this.props.liHandleClick}>
+                    <Link to="/"> Home </Link>
                 </li>
-                <li>
-                    <AnchorList href="/"> Home </AnchorList>
+                <li onClick={this.props.liHandleClick}>
+                    <Link to="/new-post"> New Post </Link>
                 </li>
-                <li>
-                    <AnchorList href="/"> Home </AnchorList>
+                <li onClick={this.props.liHandleClick}>
+                    <Link to="/favorites"> Favorites </Link>
                 </li>
-                <li>
-                    <AnchorList href="/"> Home </AnchorList>
+                <li onClick={this.props.liHandleClick}>
+                    <Link to="/"> Home </Link>
                 </li>
             </UnorderList>
         </RowContainer>

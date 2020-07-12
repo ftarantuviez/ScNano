@@ -1,9 +1,9 @@
 import React, {Component} from 'react'
 
 import { Icon } from 'react-icons-kit'
+import {ic_favorite} from 'react-icons-kit/md/ic_favorite'
 import {home3} from 'react-icons-kit/icomoon/home3'
 import {menu} from 'react-icons-kit/icomoon/menu'
-import {ic_favorite} from 'react-icons-kit/md/ic_favorite'
 import {cancelCircle} from 'react-icons-kit/icomoon/cancelCircle'
 
 import {CercleMenu, IconAusent, IconPresent, CancelIcon} from './styles'
