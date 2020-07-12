@@ -5,6 +5,11 @@ import Icon from 'react-icons-kit'
 import {search} from 'react-icons-kit/icomoon/search'
 
 class Searcher extends Component{
+    
+    handleChangeSearcher(e){
+        ["science", "technology", "business"].map(e => e )
+    } 
+
     render(){
         const PlaceHolder = `Search your favorite` 
         return(
@@ -14,7 +19,7 @@ class Searcher extends Component{
                         <Icon icon={search} />
                     </IconSearch>
                     <div className="col pl-0">
-                        <Input type="text" placeholder={PlaceHolder}/>
+                        <Input onChange={this.props.handleChange} type="text" placeholder={PlaceHolder}/>
                     </div>
                 </div>
             </SearcherContainer>

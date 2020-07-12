@@ -6,7 +6,7 @@ import {ContainerOverflow} from './styled';
 
 
 
-export const ListOfCards = ({data, refFavorite}) =>(
+export const ListOfCards = ({data}) =>(
     <>
         <div className="fluid-container">
             <ContainerOverflow className="row">

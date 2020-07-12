@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, {Component, useState} from 'react'
 import {Link} from 'react-router-dom'
 
 import {SecondaryTitle, PrimaryTitle, DateData, AllButton} from './styles';
@@ -9,14 +9,21 @@ import {ListOfCards} from '../ListOfCards/ListOfCards';
 
 
 class LandingPage extends Component{
+    
     constructor(props){
         super(props)
         this.state = {
             postsState: [],
-            postsCategories: []
+            postsCategories: [],
+            
         };
     }
+    
 
+    handleChange(e){
+        console.log(e.target.value)
+    }
+    
     componentDidMount(){
     
         this.timeoutId = setTimeout(() =>{
@@ -34,7 +41,7 @@ class LandingPage extends Component{
 
     render(){
         let lastPost = this.state.postsState.filter(post => post.postOfTheDay === true)
-        
+
         return(
 
             <>
@@ -49,7 +56,10 @@ class LandingPage extends Component{
                     </div>
                 </div>
 
-                <Searcher />
+                <Searcher 
+                    handleChange={this.handleChange}
+                />
+                
                     <div className="container m-3">
                         <h3><i>Last post </i></h3>
                         <p><DateData>Date: {lastPost[0] ? lastPost[0].date : 'date'}</DateData></p>
@@ -66,7 +76,6 @@ class LandingPage extends Component{
                 <ListOfCards 
                     data={this.state.postsState}
                 />
-                
             </>
         )
     }
